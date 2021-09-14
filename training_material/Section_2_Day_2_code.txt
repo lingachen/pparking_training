@@ -16,6 +16,13 @@ Download Raspberry Pi Server
 ==========================================
 OpenCV2 installation
 
+=== Make Swap Easier
+sudo dphys-swapfile swapoff
+sudo vim /etc/dphys-swapfile
+CONF_SWAPSIZE=1024 # make install easier
+sudo dphys-swapfile swapon
+=== Make Swap Easier
+
 sudo apt update && sudo apt install -y cmake g++ wget unzip
 wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
 unzip opencv.zip
