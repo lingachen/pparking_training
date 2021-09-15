@@ -1,100 +1,109 @@
 Pi installation
 
-Before any programming, please have a good habit.
+Symbol definition
+-- means the purpose or the target
+$ means the code which you need to type on terminal
+# means the comment of the code
+"""""" means you have to replace the all the thing such as (sudo start """root""" -> sudo start pparking)
 
-1. sudo su
-2. apt-get update
-3. apt-get upgrade
+
+
+==========================================
+Before any programming, please have a good habit.I f you find some error such like could not find the zip position, please try to update or upgrade the information.
+
+$ sudo su
+$ apt-get update
+$ apt-get upgrade # This will take a long time to upgrade the information
 
 ==========================================
 
-VNC Installation
-Open the VNC setting and activate the setting
+-- VNC Installation
+Open the VNC setting on the left top -> RasperryPi Setting and activate the setting
+$ sudo reboot # activate the setting 
+
 Download RealVNC
-https://www.realvnc.com/en/connect/download/vnc/
-Download Raspberry Pi Server
+https://www.realvnc.com/en/connect/download/vnc/ #Download Raspberry Pi version Server
+$ sudo reboot # activate the setting, you would see at the right top of the setting
 ==========================================
-OpenCV2 installation
+-- OpenCV2 installation
 
-=== Make Swap Easier
-sudo dphys-swapfile swapoff
-sudo vim /etc/dphys-swapfile
-CONF_SWAPSIZE=1024 # make install easier
-sudo dphys-swapfile swapon
-=== Make Swap Easier
+Preprocess
+$ sudo dphys-swapfile swapoff # turn of the swap
+$ sudo vim /etc/dphys-swapfile # change the config file
+$ CONF_SWAPSIZE=1024 # change the swapsize bigger in order to make install process easier
+$ sudo dphys-swapfile swapon # reopen swap
+$ sudo reboot # activate the setting 
 
-sudo apt update && sudo apt install -y cmake g++ wget unzip
-wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
-unzip opencv.zip
-mkdir -p build && cd build
-cmake  ../opencv-master
-cmake --build .
-sudo make install
+Main Process(Long time version Please make sure your directory)
+$ sudo apt update && sudo apt install -y cmake g++ wget unzip
+$ wget -O opencv.zip https://github.com/opencv/opencv/archive/master.zip
+$ unzip opencv.zip
+$ mkdir -p build && cd build
+$ cmake  ../opencv-master
+$ cmake --build .
+$ sudo make install
 
 ====
-sudo apt-get update 
-sudo apt-get upgrade
+Main Process(short time version Please make sure your directory)
 
-sudo apt-get install screen 
-sudo apt-get install htop
+$ sudo apt-get update 
+$ sudo apt-get upgrade
 
-sudo apt-get purge wolfram-engine 
-sudo apt-get purge libreoffice* 
-sudo apt-get clean 
-sudo apt-get autoremove
+$ sudo apt-get install screen 
+$ sudo apt-get install htop
 
-sudo apt-get install build-essential cmake pkg-config 
-sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev 
-sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev 
-sudo apt-get install libxvidcore-dev libx264-dev 
-sudo apt-get install libgtk2.0-dev libgtk-3-dev 
-sudo apt-get install libatlas-base-dev gfortran
+$ sudo apt-get purge wolfram-engine 
+$ sudo apt-get purge libreoffice* 
+$ sudo apt-get clean 
+$ sudo apt-get autoremove
 
-sudo apt-get install python3-dev
-sudo apt-get install python3-pip
+$ sudo apt-get install build-essential cmake pkg-config 
+$ sudo apt-get install libjpeg-dev libtiff5-dev libjasper-dev libpng12-dev 
+$ sudo apt-get install libavcodec-dev libavformat-dev libswscale-dev libv4l-dev 
+$ sudo apt-get install libxvidcore-dev libx264-dev 
+$ sudo apt-get install libgtk2.0-dev libgtk-3-dev 
+$ sudo apt-get install libatlas-base-dev gfortran
+$ sudo apt-get install python3-dev
+$ sudo apt-get install python3-pip
 
-wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.3.zip 
-wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.4.3.zip 
-unzip opencv.zip 
-unzip opencv_contrib.zip
+$ wget -O opencv.zip https://github.com/opencv/opencv/archive/3.4.3.zip 
+$ wget -O opencv_contrib.zip https://github.com/opencv/opencv_contrib/archive/3.4.3.zip 
+$ unzip opencv.zip 
+$ unzip opencv_contrib.zip
 
-sudo pip3 install numpy scipy
+$ sudo pip3 install numpy scipy
 
-cd ~/opencv-3.4.3/ 
-mkdir build 
-cd build 
-cmake -D CMAKE_BUILD_TYPE=RELEASE \ 
-    -D CMAKE_INSTALL_PREFIX=/usr/local \ 
-    -D INSTALL_PYTHON_EXAMPLES=ON \ 
-    -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.3/modules \ 
-    -D BUILD_EXAMPLES=OFF ..
+$ cd ~/opencv-3.4.3/ 
+$ mkdir build 
+$ cd build 
+$ cmake -D CMAKE_BUILD_TYPE=RELEASE -D CMAKE_INSTALL_PREFIX=/usr/local -D INSTALL_PYTHON_EXAMPLES=ON -D OPENCV_EXTRA_MODULES_PATH=../../opencv_contrib-3.4.3/modules -D BUILD_EXAMPLES=OFF ..
+$ make -j4
 
-make -j4
+$ sudo make install 
+$ sudo ldconfig 
+$ sudo apt-get update
+# sudo reboot
 
-sudo make install 
-sudo ldconfig 
-sudo apt-get update
-
-sudo reboot
-
-import cv2
-cv2.__version__
+testing usage
+python3
+$ import cv2
+$ cv2.__version__
 
 =========================================
-Modify to allow root login
-cd /etc/ssh/sshd_config
-Change PermitRootLogin -> yes
-sudo su
+-- Allow root login
+$ sudo nano /etc/ssh/sshd_config
+Change PermitRootLogin yes
+$ sudo su
 passwd(this will ask you to type in the password)
 sudo systemctl restart sshd
 
 =========================================
-samda Installation
-sudo apt-get install samba
-sudo smbpasswd -a """root"""
-sudo vim /etc/samba/smb.conf
+-- samda Installation
+$ sudo apt-get install samba
+$ sudo smbpasswd -a """root"""
+$ sudo vim /etc/samba/smb.conf
 [Insert at the bottom of the code]
-[public] the display folder_name
+[public] #the display folder_name
 path = /lpr_data #sharing path
 available = yes
 valid users = root
@@ -105,51 +114,32 @@ writable = yes
 create mask = 0777
 directory mask = 0777
 
-sudo mkdir lpr_data
-sudo chmod 777 lpr_data
-sudo systemctl restart smbd.service
+$ sudo mkdir lpr_data
+$ sudo chmod 777 lpr_data
+$ sudo systemctl restart smbd.service
 
 =========================================
-Set TimeZone
-rm /etc/localtime
-ln –s /usr/share/zoneinfo/Singapore /etc/localtime
+-- Set TimeZone
+$ sudo rm /etc/localtime
+$ sudo ln –s /usr/share/zoneinfo/Singapore /etc/localtime
 
 =========================================
-Modify resolution without real monitor
-sudo vim /etc/X11/xorg.conf
-Section "Monitor"
-       Identifier "DSI-0"
-       Option    "Ignore"
-    EndSection
-    
-Section "Screen"
-   Identifier    "Default Screen"
-   Monitor        "Configured Monitor"
-   Device        "Default Device"
-   SubSection "Display"
-       Depth    24
-       Virtual 1920 1080
-   EndSubSection
-EndSection
+-- Modify resolution without real monitor
+click on the left top menu to modify the question.
+usually default will be fine enough
 
 ==========================================
-sudo no password check
+-- sudo without password check
 
-sudo visudo
+$ sudo visudo
+insert at the bottom of the code 
 """name""" ALL=(ALL) NOPASSWD: ALL
 ==========================================
-glog system
-sudo apt-get update -y
-sudo apt-get install -y libgoogle-glog-dev
+-- Postgres Required API
+$ sudo apt install libpq-dev
 ==========================================
-boost_system
-sudo apt-get install libboost-all-dev
-==========================================
-Postgres Required API
-sudo apt install libpq-dev
-==========================================
-Postgres Required main package
-sudo apt install postgresql postgresql-contrib
+-- Postgres Required main package
+$ sudo apt install postgresql postgresql-contrib
 
 ==========================================
 ==========================================
