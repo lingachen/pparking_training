@@ -5,3 +5,4 @@
 20210916 version 0.3.1 -- update pi package
 20210917 versoin 0.3.2 -- minor fix on content
 20210919 version 0.4.1 -- update machine_learning_instruction
+20210921 version 0.5.1 -- update QT package and code

@@ -1,0 +1,12 @@
+void wait_ms(int timeval_ms);
+QString toQstring(char *inpstr);
+string toStdstring(QString *qstr);
+int toInt(QString qstr);
+QString get_currenttime();
+QString get_monthid();
+QString convert_time_format(char *time_bcd);
+bool check_file_exist(char *FullPathFileName);
+int get_pgs_lotid_index(char *lotid);
+int get_floor_index(char *floor_id);
+int get_floor_lot_index(char *lotid);
+int get_display_index(char *lotid);
