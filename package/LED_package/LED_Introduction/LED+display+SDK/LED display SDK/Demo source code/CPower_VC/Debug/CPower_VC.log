@@ -1,7 +1,0 @@
-﻿C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets(36,5): warning MSB4211: 正要將屬性 "IntermediateOutputPath" 第一次設定為某個值，但是它已經在 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (35,5)" 使用過了。
-C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Current\Bin\Microsoft.Common.CurrentVersion.targets(337,5): warning MSB4211: 正要將屬性 "CleanFile" 第一次設定為某個值，但是它已經在 "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\MSBuild\Microsoft\VC\v160\Microsoft.CppCommon.targets (35,5)" 使用過了。
-  CPower_VCDlg.cpp
-D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_VC\CPower_VCDlg.cpp(19,1): warning C4005: '_countof': 巨集重複定義
-C:\Program Files (x86)\Windows Kits\10\Include\10.0.18362.0\ucrt\stdlib.h(23): message : 請參閱 '_countof' 之前的定義
-CPower_VC.obj : warning LNK4075: 忽略 '/EDITANDCONTINUE'，由於 '/INCREMENTAL:NO' 規格
-  CPower_VC.vcxproj -> D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_VC\.\Debug\CPower_VC.exe
