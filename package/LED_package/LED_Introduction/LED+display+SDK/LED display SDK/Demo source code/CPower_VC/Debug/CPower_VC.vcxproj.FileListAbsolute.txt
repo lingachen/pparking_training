@@ -1,0 +1,2 @@
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_VC\Debug\CPower_VC.exe
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_VC\Debug\CPower_VC.pdb

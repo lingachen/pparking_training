@@ -1,0 +1,8 @@
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\obj\Debug\CPower_CSharp.csprojAssemblyReference.cache
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\obj\Debug\CPower_CSharp.Form1.resources
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\obj\Debug\CPower_CSharp.csproj.GenerateResource.cache
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\obj\Debug\CPower_CSharp.csproj.CoreCompileInputs.cache
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\obj\Debug\CPower_CSharp.exe
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\obj\Debug\CPower_CSharp.pdb
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\CPower_CSharp.exe
+D:\Desktop\Car_park_component\LED顯示器\LED+display+SDK\LED display SDK\Demo source code\CPower_CSharp\CPower_CSharp.pdb

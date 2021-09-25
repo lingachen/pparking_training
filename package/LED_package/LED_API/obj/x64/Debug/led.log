@@ -1,0 +1,62 @@
+﻿  Validating sources
+  Copying sources remotely to '27.104.8.234'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  led.cpp
+C:\Temp\test0923\led\led.cpp(8,32): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(8,32): warning :   unsigned char cid = led_index + 1;
+C:\Temp\test0923\led\led.cpp(8,32): warning :                       ~~~~~~~~~~^~~
+C:\Temp\test0923\led\led.cpp(22,17): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(22,17): warning :   img_len = fread(imgdata, 1, 4096, fp);
+C:\Temp\test0923\led\led.cpp(22,17): warning :             ~~~~~^~~~~~~~~~~~~~~~~~~~~~
+C:\Temp\test0923\led\led.cpp(34,19): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(34,19): warning :   LED_msg[idx++] = network_data_len; // len (from packet type)
+C:\Temp\test0923\led\led.cpp(34,19): warning :                    ^~~~~~~~~~~~~~~~
+C:\Temp\test0923\led\led.cpp(43,19): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(43,19): warning :   LED_msg[idx++] = packet_data_len; // packet data len
+C:\Temp\test0923\led\led.cpp(43,19): warning :                    ^~~~~~~~~~~~~~~
+C:\Temp\test0923\led\led.cpp(50,29): warning : conversion to ‘unsigned char’ from ‘unsigned int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(50,29): warning :   LED_msg[idx++] = ichecksum >> 8;
+C:\Temp\test0923\led\led.cpp(50,29): warning :                    ~~~~~~~~~~^~~~
+C:\Temp\test0923\led\led.cpp(62,7): warning : unused variable ‘log_msg’ [-Wunused-variable]
+C:\Temp\test0923\led\led.cpp(62,7): warning :   char log_msg[4096];
+C:\Temp\test0923\led\led.cpp(62,7): warning :        ^~~~~~~
+C:\Temp\test0923\led\led.cpp(74,6): warning : unused variable ‘n’ [-Wunused-variable]
+C:\Temp\test0923\led\led.cpp(74,6): warning :   int n = tcp_read(led_sockfd[led_index], buf);
+C:\Temp\test0923\led\led.cpp(74,6): warning :       ^
+C:\Temp\test0923\led\led.cpp(85,32): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(85,32): warning :   unsigned char cid = led_index + 1;
+C:\Temp\test0923\led\led.cpp(85,32): warning :                       ~~~~~~~~~~^~~
+C:\Temp\test0923\led\led.cpp(103,20): warning : comparison between signed and unsigned integer expressions [-Wsign-compare]
+C:\Temp\test0923\led\led.cpp(103,20): warning :   for (int i = 0; i < strlen(msg); i++) packet_data[p++] = msg[i];
+C:\Temp\test0923\led\led.cpp(103,20): warning :                   ~~^~~~~~~~~~~~~
+C:\Temp\test0923\led\led.cpp(115,19): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(115,19): warning :   LED_msg[idx++] = network_data_len; // len (from packet type)
+C:\Temp\test0923\led\led.cpp(115,19): warning :                    ^~~~~~~~~~~~~~~~
+C:\Temp\test0923\led\led.cpp(124,19): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(124,19): warning :   LED_msg[idx++] = packet_data_len; //length(Lbyte)
+C:\Temp\test0923\led\led.cpp(124,19): warning :                    ^~~~~~~~~~~~~~~
+C:\Temp\test0923\led\led.cpp(131,29): warning : conversion to ‘unsigned char’ from ‘unsigned int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(131,29): warning :   LED_msg[idx++] = ichecksum >> 8;
+C:\Temp\test0923\led\led.cpp(131,29): warning :                    ~~~~~~~~~~^~~~
+C:\Temp\test0923\led\led.cpp(143,32): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(143,32): warning :   unsigned char cid = led_index + 1;
+C:\Temp\test0923\led\led.cpp(143,32): warning :                       ~~~~~~~~~~^~~
+C:\Temp\test0923\led\led.cpp(173,36): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(173,36): warning :   LED_msg[idx++] = network_data_len % 256; // len (from packet type)
+C:\Temp\test0923\led\led.cpp(173,36): warning :                    ~~~~~~~~~~~~~~~~~^~~~~
+C:\Temp\test0923\led\led.cpp(174,36): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(174,36): warning :   LED_msg[idx++] = network_data_len / 256; // len
+C:\Temp\test0923\led\led.cpp(174,36): warning :                    ~~~~~~~~~~~~~~~~~^~~~~
+C:\Temp\test0923\led\led.cpp(182,35): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(182,35): warning :   LED_msg[idx++] = packet_data_len % 256; //length(Lbyte)
+C:\Temp\test0923\led\led.cpp(182,35): warning :                    ~~~~~~~~~~~~~~~~^~~~~
+C:\Temp\test0923\led\led.cpp(183,35): warning : conversion to ‘unsigned char’ from ‘int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(183,35): warning :   LED_msg[idx++] = packet_data_len / 256; //length(Hbyte)
+C:\Temp\test0923\led\led.cpp(183,35): warning :                    ~~~~~~~~~~~~~~~~^~~~~
+C:\Temp\test0923\led\led.cpp(189,29): warning : conversion to ‘unsigned char’ from ‘unsigned int’ may alter its value [-Wconversion]
+C:\Temp\test0923\led\led.cpp(189,29): warning :   LED_msg[idx++] = ichecksum >> 8;
+C:\Temp\test0923\led\led.cpp(189,29): warning :                    ~~~~~~~~~~^~~~
+  Linking objects
+  led.vcxproj -> C:\Temp\test0923\led\bin\x64\Debug\led

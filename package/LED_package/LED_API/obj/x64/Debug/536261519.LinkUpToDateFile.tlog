@@ -1,0 +1,1 @@
+g++ -o "/tmp/led/bin/x64/Debug/led" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /tmp/led/obj/x64/Debug/led.o /tmp/led/obj/x64/Debug/main.o /tmp/led/obj/x64/Debug/tcp.o /tmp/led/obj/x64/Debug/utils.o
