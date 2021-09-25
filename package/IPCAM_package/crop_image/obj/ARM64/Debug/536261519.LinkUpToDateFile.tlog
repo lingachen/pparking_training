@@ -1,0 +1,1 @@
+g++ -o "/tmp/test0923/bin/ARM64/Debug/test0923" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /tmp/test0923/obj/ARM64/Debug/camera.o /tmp/test0923/obj/ARM64/Debug/main.o `pkg-config --libs opencv` /usr/local/lib/chilkat/libchilkat-9.5.0.so -lpthread

@@ -1,0 +1,48 @@
+﻿  Validating sources
+  Copying sources remotely to '27.104.8.234'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  camera.cpp
+C:\Temp\test0923\test0923\camera.cpp(30,51): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+C:\Temp\test0923\test0923\camera.cpp(30,51): warning :    convert_jpeg_buf_to_mat(memBuffer, fileSize, out);
+C:\Temp\test0923\test0923\camera.cpp(30,51): warning :                                                    ^
+C:\Temp\test0923\test0923\camera.cpp(81,19): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+C:\Temp\test0923\test0923\camera.cpp(81,19): warning :    ofset = findPos - content;
+C:\Temp\test0923\test0923\camera.cpp(81,19): warning :            ~~~~~~~~^~~~~~~~~
+C:\Temp\test0923\test0923\camera.cpp(82,9): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+C:\Temp\test0923\test0923\camera.cpp(82,9): warning :    ofset += strlen(srchStr1);
+C:\Temp\test0923\test0923\camera.cpp(82,9): warning :    ~~~~~~^~~~~~~~~~~~~~~~~~~
+C:\Temp\test0923\test0923\camera.cpp(90,20): warning : conversion to ‘int’ from ‘long int’ may alter its value [-Wconversion]
+C:\Temp\test0923\test0923\camera.cpp(90,20): warning :     ofset = findPos - content;
+C:\Temp\test0923\test0923\camera.cpp(90,20): warning :             ~~~~~~~~^~~~~~~~~
+C:\Temp\test0923\test0923\camera.cpp(91,10): warning : conversion to ‘int’ from ‘size_t {aka long unsigned int}’ may alter its value [-Wconversion]
+C:\Temp\test0923\test0923\camera.cpp(91,10): warning :     ofset += strlen(srchStr2);
+C:\Temp\test0923\test0923\camera.cpp(91,10): warning :     ~~~~~~^~~~~~~~~~~~~~~~~~~
+C:\Temp\test0923\test0923\camera.cpp(106,10): warning : converting to non-pointer type ‘SOCKET {aka int}’ from NULL [-Wconversion-null]
+C:\Temp\test0923\test0923\camera.cpp(106,10): warning :    return NULL;
+C:\Temp\test0923\test0923\camera.cpp(106,10): warning :           ^~~~
+C:\Temp\test0923\test0923\camera.cpp(113,10): warning : converting to non-pointer type ‘SOCKET {aka int}’ from NULL [-Wconversion-null]
+C:\Temp\test0923\test0923\camera.cpp(113,10): warning :    return NULL;
+C:\Temp\test0923\test0923\camera.cpp(113,10): warning :           ^~~~
+C:\Temp\test0923\test0923\camera.cpp(99,18): warning : unused variable ‘hp’ [-Wunused-variable]
+C:\Temp\test0923\test0923\camera.cpp(99,18): warning :   struct hostent *hp;
+C:\Temp\test0923\test0923\camera.cpp(99,18): warning :                   ^~
+C:\Temp\test0923\test0923\camera.cpp(100,15): warning : unused variable ‘addr’ [-Wunused-variable]
+C:\Temp\test0923\test0923\camera.cpp(100,15): warning :   unsigned int addr;
+C:\Temp\test0923\test0923\camera.cpp(100,15): warning :                ^~~~
+C:\Temp\test0923\test0923\camera.cpp(172,15): warning : NULL used in arithmetic [-Wpointer-arith]
+C:\Temp\test0923\test0923\camera.cpp(172,15): warning :    if (conn != NULL) close(conn);
+C:\Temp\test0923\test0923\camera.cpp(172,15): warning :                ^~~~
+C:\Temp\test0923\test0923\camera.cpp(177,15): warning : NULL used in arithmetic [-Wpointer-arith]
+C:\Temp\test0923\test0923\camera.cpp(177,15): warning :    if (conn != NULL) close(conn);
+C:\Temp\test0923\test0923\camera.cpp(177,15): warning :                ^~~~
+C:\Temp\test0923\test0923\camera.cpp(189,21): warning : converting to non-pointer type ‘char’ from NULL [-Wconversion-null]
+C:\Temp\test0923\test0923\camera.cpp(189,21): warning :   myTmp[headerLen] = NULL;
+C:\Temp\test0923\test0923\camera.cpp(189,21): warning :                      ^~~~
+C:\Temp\test0923\test0923\camera.cpp(194,14): warning : NULL used in arithmetic [-Wpointer-arith]
+C:\Temp\test0923\test0923\camera.cpp(194,14): warning :   if (conn != NULL) close(conn);
+C:\Temp\test0923\test0923\camera.cpp(194,14): warning :               ^~~~
+  main.cpp
+  Linking objects
+  test0923.vcxproj -> C:\Temp\test0923\test0923\bin\ARM64\Debug\test0923

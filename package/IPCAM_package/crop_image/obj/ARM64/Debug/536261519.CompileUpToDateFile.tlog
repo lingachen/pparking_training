@@ -1,0 +1,7 @@
+C:\Temp\test0923\test0923\camera.cpp|637679941205599236|/tmp/test0923||g++ -c -x c++ /tmp/test0923/camera.cpp -I /tmp/test0923 -I /usr/local/include/opencv -I /usr/local/include/opencv2 -I /usr/local/include -I /usr/local/include/chilkat -g2 -gdwarf-2 -o "/tmp/test0923/obj/ARM64/Debug/camera.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11
+C:\Temp\test0923\test0923\main.cpp|637679943474699021|/tmp/test0923||g++ -c -x c++ /tmp/test0923/main.cpp -I /tmp/test0923 -I /usr/local/include/opencv -I /usr/local/include/opencv2 -I /usr/local/include -I /usr/local/include/chilkat -g2 -gdwarf-2 -o "/tmp/test0923/obj/ARM64/Debug/main.o" -Wall -Wswitch -W"no-deprecated-declarations" -W"empty-body" -Wconversion -W"return-type" -Wparentheses -W"no-format" -Wuninitialized -W"unreachable-code" -W"unused-function" -W"unused-value" -W"unused-variable" -O0 -fno-strict-aliasing -fno-omit-frame-pointer -fthreadsafe-statics -fexceptions -frtti -std=c++11
+C:\Temp\test0923\test0923\camera.h|637679940414803996|/tmp/test0923|| 
+C:\Temp\test0923\test0923\defines2.h|637679937887907773|/tmp/test0923|| 
+C:\Temp\test0923\test0923\externals.h|637679939406930330|/tmp/test0923|| 
+C:\Temp\test0923\test0923\main.h|637679937888007760|/tmp/test0923|| 
+C:\Temp\test0923\test0923\pparking.h|637679937593572681|/tmp/test0923|| 

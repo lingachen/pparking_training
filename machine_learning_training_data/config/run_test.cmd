@@ -1,1 +1,0 @@
-../../darknet detector test yolov3_.cfg ../../backup/yolov3__last.weights -i 0 -thresh 0.7 ../Car.jpg

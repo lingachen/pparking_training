@@ -1,0 +1,8 @@
+﻿  Validating sources
+  Copying sources remotely to '172.16.1.122'
+  Validating architecture
+  Starting remote build
+  Compiling sources:
+  main.cpp
+  Linking objects
+  test0923.vcxproj -> C:\Temp\test0923\test0923\bin\ARM\Debug\test0923

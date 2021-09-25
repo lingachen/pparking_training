@@ -1,0 +1,1 @@
+g++ -o "/tmp/test0923/bin/ARM/Debug/test0923" -Wl,--no-undefined -Wl,-z,relro -Wl,-z,now -Wl,-z,noexecstack /tmp/test0923/obj/ARM/Debug/main.o
