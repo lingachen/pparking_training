@@ -1,7 +1,0 @@
-classes=4
-train  = /opt/workspace/test/pgs/cfg/train.list
-valid  = /opt/workspace/test/pgs/cfg/valid.list
-backup = /opt/workspace/test/pgs/backup53/
-labels = /opt/workspace/test/pgs/cfg/labels.list
-names  = /opt/workspace/test/pgs/cfg/shortnames.list
-top=4

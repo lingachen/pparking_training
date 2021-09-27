@@ -1,27 +1,5 @@
 Every Documentation Usage and changing
 ==========================================
--- pgs
-	-- cfg
-		-- labels.list # This defines the label of index
-		-- shortnames.list # This defines the shortnames of index
-		-- nexuni53.data # This defines the path of the file
-		-- train.list # This defines which file needs to be trained
-		-- valid.list # This defines which file needs to be valided
-		-- nexuni53.cfg # This defines the training batch
-		   ----> if you change the label amount please change the filters in the last conventional to 3*(5+label_amount)
-		-- nexuni53_test.cfg # This defines the training batch
-			----> if you change the label amount please change the filters in the last conventional to 3*(5+label_amount)
-	-- backup53
-		-- darknet53.backup # This is the weight of the ML
-		-- darknet53_init.weight  # Not Trained
-		-- darknet53_1169.weight  # Trained
-	-- data
-		you will need the crop function to crop the image
-		I will not put it in the github
-	-- go53.bash # start training
-	-- nexuni # a calculator
-	-- va53.bash # valid training
-
 -- charseg
 	-- cfg
 		-- plate.names # This defines the label of index
