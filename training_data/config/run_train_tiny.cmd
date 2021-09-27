@@ -1,1 +1,0 @@
-../../darknet detector train .data yolov3-tiny_.cfg ../../backup/yolov3-tiny__last.weights

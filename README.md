@@ -7,3 +7,4 @@
 20210919 version 0.4.1 -- update machine_learning_instruction
 20210921 version 0.5.1 -- update QT package and code
 20210924 version 0.6.1 -- update LED and IPCAM
+20210927 version 1     -- update all the instruction PDF and add missing part for all the package
